@@ -1,0 +1,21 @@
+---
+title: "All that legal stuff..."
+author: "Alex Cleveringa"
+topic: "08"
+layout: post
+root: ../../../
+---
+
+The biggest problem I encountered was getting the code copied and pasted in the correct format to be able to build the website. When I copied and pasted the code from Github, I received the error  
+
+"Loading required package: usethis
+Error in yaml::yaml.load(..., eval.expr = TRUE) : 
+  Parser error: while parsing a block mapping at line 1, column 1 did not find expected key at line 2, column 3
+Calls: <Anonymous> ... default_site -> site_config -> yaml_load -> <Anonymous>
+Execution halted
+
+Exited with status 1."
+
+I couldn't find a solution online, but when I compared the scripts side-by-side I discovered that there were two extra spaces before each line of code in my *_site.yml* file. Once I realized this, the error message made more sense and I was able to build the website. Knowing that R is sensitive to the spaces in the setup lines will help me if I make a website in the future. A program I am in requires us to have a website and post a certain number of artifacts we have created, and I know I can use RStudio and Github to do this.
+  
+  I also wasn't able to figure out how to upload an image and get it to appear in one of my .Rmd files.
